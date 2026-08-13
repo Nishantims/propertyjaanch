@@ -21,6 +21,15 @@
   --gold-soft: #dcc383;
   --gold-tint: #f4ecd8;
 
+  /* Fixed (not redefined in dark mode) — for text/icons sitting directly on
+     a gold surface, e.g. a gold button or a gold banner. --navy flips to a
+     light periwinkle in dark mode for legibility as body text, which reads
+     fine on a dark page background but goes low-contrast on a gold surface
+     in dark mode. Gold surfaces need a color that's reliably dark in both
+     themes, same as an engraved seal always reading dark regardless of the
+     room's lighting. */
+  --ink-on-gold: #1b2a4a;
+
   --status-green: #1e7a52;
   --status-green-tint: #e1f1e8;
   --status-amber: #b0741a;
@@ -113,6 +122,7 @@
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
   --color-gold-tint: var(--gold-tint);
+  --color-ink-on-gold: var(--ink-on-gold);
 
   --color-status-green: var(--status-green);
   --color-status-green-tint: var(--status-green-tint);
