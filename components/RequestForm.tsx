@@ -61,7 +61,7 @@ export function RequestForm({ service, ctaLabel, fields = DEFAULT_FIELDS }: Prop
       </div>
       <button
         type="submit"
-        className="mt-5 inline-flex items-center rounded-full bg-navy px-7 py-3 text-[14px] font-semibold text-white hover:bg-navy-soft transition-colors"
+        className="mt-5 inline-flex items-center rounded-full bg-navy-fixed px-7 py-3 text-[14px] font-semibold text-white hover:opacity-90 transition-opacity"
       >
         {ctaLabel}
       </button>

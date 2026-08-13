@@ -33,7 +33,7 @@ export function Header() {
           <ThemeToggle />
           <Link
             href="/trust-check"
-            className="inline-flex items-center rounded-full bg-navy px-5 py-2.5 text-[13px] font-semibold text-white hover:bg-navy-soft transition-colors"
+            className="inline-flex items-center rounded-full bg-navy-fixed px-5 py-2.5 text-[13px] font-semibold text-white hover:opacity-90 transition-opacity"
           >
             Verify a Property
           </Link>
@@ -72,7 +72,7 @@ export function Header() {
             <Link
               href="/trust-check"
               onClick={() => setOpen(false)}
-              className="mt-4 mb-1 inline-flex items-center justify-center rounded-full bg-navy px-5 py-3 text-[14px] font-semibold text-white"
+              className="mt-4 mb-1 inline-flex items-center justify-center rounded-full bg-navy-fixed px-5 py-3 text-[14px] font-semibold text-white"
             >
               Verify a Property
             </Link>

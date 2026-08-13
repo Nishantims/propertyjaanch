@@ -17,6 +17,14 @@
   --navy-soft: #2f4270;
   --navy-tint: #e8ecf5;
 
+  /* Fixed (not redefined in dark mode) — for a SOLID navy fill (buttons,
+     boxes) that should always read as a grounded dark accent. --navy itself
+     flips to a light periwinkle in dark mode, which is correct for text
+     that needs to stay legible against a dark page background, but wrong
+     for a solid block: a light-periwinkle button on a near-black page just
+     reads as a mismatched "blue" pill rather than a navy accent. */
+  --navy-fixed: #1b2a4a;
+
   --gold: #a97a1f;
   --gold-soft: #dcc383;
   --gold-tint: #f4ecd8;
@@ -118,6 +126,7 @@
   --color-navy: var(--navy);
   --color-navy-soft: var(--navy-soft);
   --color-navy-tint: var(--navy-tint);
+  --color-navy-fixed: var(--navy-fixed);
 
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);

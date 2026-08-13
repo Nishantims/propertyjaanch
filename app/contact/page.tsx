@@ -25,7 +25,7 @@ export default function ContactPage() {
 
         <a
           href="mailto:contact@market-reports.com"
-          className="mt-7 inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-[14px] font-semibold text-white hover:bg-navy-soft transition-colors"
+          className="mt-7 inline-flex items-center gap-2 rounded-full bg-navy-fixed px-6 py-3 text-[14px] font-semibold text-white hover:opacity-90 transition-opacity"
         >
           contact@market-reports.com
         </a>

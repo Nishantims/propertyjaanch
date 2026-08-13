@@ -74,7 +74,7 @@ export default function HomePage() {
             Verify the property. Know the risks. Secure the transaction — before you sign anything.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <Link href="/trust-check" className="inline-flex items-center rounded-full bg-navy px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-navy-soft transition-colors">
+            <Link href="/trust-check" className="inline-flex items-center rounded-full bg-navy-fixed px-7 py-3.5 text-[14px] font-semibold text-white hover:opacity-90 transition-opacity">
               Verify a Property
             </Link>
             <Link href="/marketplace" className="inline-flex items-center rounded-full border border-line-strong bg-bg-elevated px-7 py-3.5 text-[14px] font-semibold text-ink hover:border-gold-soft hover:text-gold transition-colors">
@@ -95,7 +95,7 @@ export default function HomePage() {
             <WorryCard title="What buyers worry about" items={BUYER_WORRIES} />
             <WorryCard title="What sellers worry about" items={SELLER_WORRIES} />
           </div>
-          <div className="mt-8 rounded-2xl bg-navy px-6 py-6 sm:px-8 sm:py-7 text-white">
+          <div className="mt-8 rounded-2xl bg-navy-fixed px-6 py-6 sm:px-8 sm:py-7 text-white">
             <p className="text-[11px] font-semibold uppercase tracking-wide text-gold-soft mb-2">Our answer</p>
             <p className="font-display text-xl sm:text-2xl leading-snug text-balance">
               Independent verification, transparent property information, and a secure transaction workflow.

@@ -61,7 +61,7 @@ export default function SecureTransactionPage() {
             {FLOW.map((step, i) => (
               <div key={step} className="flex gap-4">
                 <div className="flex flex-col items-center">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy text-white text-[13px] font-semibold">{i + 1}</span>
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy-fixed text-white text-[13px] font-semibold">{i + 1}</span>
                   {i < FLOW.length - 1 && <span className="w-px flex-1 min-h-[22px] bg-line-strong" />}
                 </div>
                 <p className="pb-6 pt-1 text-[14.5px] text-ink-soft">{step}</p>
