@@ -34,7 +34,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-line flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-          <p className="text-[12px] text-ink-faint">© {new Date().getFullYear()} PropertyJaanch. All rights reserved.</p>
+          <p className="text-[12px] text-ink-faint">© {new Date().getFullYear()} PropertyJaanch, operated by Quintessence Analytics Pvt Ltd. All rights reserved.</p>
           <p className="text-[12px] text-ink-faint max-w-2xl sm:text-right">
             PropertyJaanch is under active development. Verification checks reflect what has been independently confirmed at the time of the check — always verify independently before making a final decision. See each service page for what is live today versus in development.
           </p>

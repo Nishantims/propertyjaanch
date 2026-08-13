@@ -226,15 +226,15 @@ export default function HomePage() {
 
       {/* ── Final CTA ────────────────────────────────────────────── */}
       <section className="py-16 sm:py-24">
-        <Container className="rounded-3xl bg-gold px-6 py-14 sm:px-14 sm:py-16 text-center text-ink-on-gold">
+        <Container className="rounded-3xl bg-navy-fixed px-6 py-14 sm:px-14 sm:py-16 text-center text-white">
           <h2 className="font-display text-2xl sm:text-[2.1rem] font-medium text-balance max-w-xl mx-auto">
             Buying or selling property? Start with what&apos;s actually true about it.
           </h2>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link href="/trust-check" className="inline-flex items-center rounded-full bg-ink-on-gold px-7 py-3.5 text-[14px] font-semibold text-white hover:opacity-90 transition-opacity">
+            <Link href="/trust-check" className="inline-flex items-center rounded-full bg-gold px-7 py-3.5 text-[14px] font-semibold text-ink-on-gold hover:bg-gold-soft transition-colors">
               Verify a Property
             </Link>
-            <Link href="/contact" className="inline-flex items-center rounded-full border border-ink-on-gold/35 px-7 py-3.5 text-[14px] font-semibold text-ink-on-gold hover:bg-ink-on-gold/10 transition-colors">
+            <Link href="/contact" className="inline-flex items-center rounded-full border border-white/30 px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-white/10 transition-colors">
               Talk to Us
             </Link>
           </div>
