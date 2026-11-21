@@ -24,11 +24,6 @@
   "source": "https://images.unsplash.com/photo-1611048267451-e6ed903d4a38",
   "license": "Unsplash License (free commercial use)"
  },
- "/images/hero-tower.webp": {
-  "photographer": "Viktor Jakovlev",
-  "source": "https://images.unsplash.com/photo-1443527394413-4b820fd08dde",
-  "license": "Unsplash License (free commercial use)"
- },
  "/images/page-contact.webp": {
   "photographer": "Aalo Lens",
   "source": "https://images.unsplash.com/photo-1758193783649-13371d7fb8dd",
@@ -42,6 +37,11 @@
  "/images/page-secure-transaction.webp": {
   "photographer": "Scott Graham",
   "source": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/hero-residence.webp": {
+  "photographer": "Michael Brown",
+  "source": "https://images.unsplash.com/photo-1757356657991-c3fd6e2e812e",
   "license": "Unsplash License (free commercial use)"
  }
 }

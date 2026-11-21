@@ -92,10 +92,10 @@ export default function HomePage() {
           </div>
           </div>
 
-          {/* A modern glass tower (owner, 2026-11-21: "a good posh office building"), with a small trust-profile tag over the photo. */}
+          {/* A luxury home at dusk (owner, 2026-11-21: "something better"), with a small trust-profile tag over the photo. */}
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-line" style={{ boxShadow: 'var(--shadow-card)' }}>
-              <Image src="/images/hero-tower.webp" alt="A modern glass office tower rising against the sky" fill priority sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover" {...blurProps("/images/hero-tower.webp")} />
+              <Image src="/images/hero-residence.webp" alt="A modern luxury home with a lit pool at dusk" fill priority sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover" {...blurProps("/images/hero-residence.webp")} />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b1730]/45 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-5 left-4 sm:-left-6 flex items-center gap-3 rounded-2xl border border-line bg-bg-elevated px-4 py-3" style={{ boxShadow: 'var(--shadow-card)' }}>
