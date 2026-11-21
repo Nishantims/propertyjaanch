@@ -1,3 +1,4 @@
+import { PagePhoto } from '@/components/ui/PagePhoto'
 import type { Metadata } from 'next'
 import { Container } from '@/components/ui/Container'
 import { Seal } from '@/components/ui/Seal'
@@ -21,7 +22,8 @@ export default function MarketplacePage() {
   return (
     <>
       <section className="border-b border-line">
-        <Container className="pt-14 pb-14 sm:pt-20 sm:pb-16">
+        <Container className="pt-14 pb-14 sm:pt-20 sm:pb-16 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-14 items-center">
+          <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gold mb-4">Service 02 — Verified Marketplace</p>
           <h1 className="font-display text-4xl sm:text-5xl leading-tight max-w-2xl text-balance text-ink font-medium">
             Buy and sell with proof, not promises.
@@ -31,6 +33,8 @@ export default function MarketplacePage() {
             encumbrances, and the rest have actually been checked.
           </p>
           <div className="mt-6"><RoadmapBadge label="Marketplace listings launching soon — join early access below" /></div>
+          </div>
+          <PagePhoto src="/images/page-marketplace.webp" alt="A furnished living room in a modern apartment" className="max-w-md mx-auto lg:max-w-none" />
         </Container>
       </section>
 

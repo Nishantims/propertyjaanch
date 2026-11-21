@@ -1,9 +1,4 @@
 {
- "/images/hero-residences.webp": {
-  "photographer": "Zoshua Colah",
-  "source": "https://images.unsplash.com/photo-1750715831822-b9156ee618a5",
-  "license": "Unsplash License (free commercial use)"
- },
  "/images/service-trust-check.webp": {
   "photographer": "Jakub Żerdzicki",
   "source": "https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79",
@@ -22,6 +17,31 @@
  "/images/cta-city.webp": {
   "photographer": "Danish Puri",
   "source": "https://images.unsplash.com/photo-1793541567237-d53e4e6c62f6",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/page-marketplace.webp": {
+  "photographer": "Huy Nguyen",
+  "source": "https://images.unsplash.com/photo-1611048267451-e6ed903d4a38",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/hero-tower.webp": {
+  "photographer": "Viktor Jakovlev",
+  "source": "https://images.unsplash.com/photo-1443527394413-4b820fd08dde",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/page-contact.webp": {
+  "photographer": "Aalo Lens",
+  "source": "https://images.unsplash.com/photo-1758193783649-13371d7fb8dd",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/page-trust-check.webp": {
+  "photographer": "Jakub Żerdzicki",
+  "source": "https://images.unsplash.com/photo-1732812608429-67bd0ff463ae",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/page-secure-transaction.webp": {
+  "photographer": "Scott Graham",
+  "source": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
   "license": "Unsplash License (free commercial use)"
  }
 }

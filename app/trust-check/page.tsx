@@ -1,3 +1,4 @@
+import { PagePhoto } from '@/components/ui/PagePhoto'
 import type { Metadata } from 'next'
 import { Container } from '@/components/ui/Container'
 import { Seal } from '@/components/ui/Seal'
@@ -46,7 +47,8 @@ export default function TrustCheckPage() {
   return (
     <>
       <section className="border-b border-line">
-        <Container className="pt-14 pb-14 sm:pt-20 sm:pb-16">
+        <Container className="pt-14 pb-14 sm:pt-20 sm:pb-16 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-14 items-center">
+          <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gold mb-4">Service 01 — Property Trust Check</p>
           <h1 className="font-display text-4xl sm:text-5xl leading-tight max-w-2xl text-balance text-ink font-medium">
             Is this property safe to buy?
@@ -57,6 +59,8 @@ export default function TrustCheckPage() {
             authority.
           </p>
           <div className="mt-6"><RoadmapBadge label="Automated scoring in development — checks below are run manually today" /></div>
+          </div>
+          <PagePhoto src="/images/page-trust-check.webp" alt="House keys resting on property documents and charts" className="max-w-md mx-auto lg:max-w-none" />
         </Container>
       </section>
 

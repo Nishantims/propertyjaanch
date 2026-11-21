@@ -1,3 +1,4 @@
+import { PagePhoto } from '@/components/ui/PagePhoto'
 import type { Metadata } from 'next'
 import { Container } from '@/components/ui/Container'
 import { RoadmapBadge } from '@/components/ui/RoadmapBadge'
@@ -33,7 +34,8 @@ export default function SecureTransactionPage() {
   return (
     <>
       <section className="border-b border-line">
-        <Container className="pt-14 pb-14 sm:pt-20 sm:pb-16">
+        <Container className="pt-14 pb-14 sm:pt-20 sm:pb-16 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-14 items-center">
+          <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-gold mb-4">Service 03 — Secure Transaction</p>
           <h1 className="font-display text-4xl sm:text-5xl leading-tight max-w-2xl text-balance text-ink font-medium">
             Don&apos;t release the money until the agreed conditions are met.
@@ -50,6 +52,8 @@ export default function SecureTransactionPage() {
               the exact structure will be finalized with that partner and legal counsel before it goes live.
             </p>
           </div>
+          </div>
+          <PagePhoto src="/images/page-secure-transaction.webp" alt="A buyer signing a property agreement with a pen" className="max-w-md mx-auto lg:max-w-none" />
         </Container>
       </section>
 

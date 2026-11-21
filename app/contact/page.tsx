@@ -1,3 +1,4 @@
+import { PagePhoto } from '@/components/ui/PagePhoto'
 import type { Metadata } from 'next'
 import { Container } from '@/components/ui/Container'
 import { Seal } from '@/components/ui/Seal'
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="py-16 sm:py-24">
-      <Container className="max-w-2xl">
+      <Container className="grid grid-cols-1 lg:grid-cols-[1fr_0.85fr] gap-12 lg:gap-16 items-start">
+        <div className="min-w-0 max-w-2xl">
         <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold mb-4">
           <Seal size={14} /> Contact us
         </p>
@@ -40,6 +42,10 @@ export default function ContactPage() {
               { name: 'topic', label: 'What is this about?', placeholder: 'e.g. Trust Check, Marketplace, Secure Transaction' },
             ]}
           />
+        </div>
+        </div>
+        <div className="hidden lg:block lg:sticky lg:top-28">
+          <PagePhoto src="/images/page-contact.webp" alt="A marble reception lobby with warm lighting" />
         </div>
       </Container>
     </section>
