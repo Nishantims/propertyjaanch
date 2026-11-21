@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { blurProps } from '@/lib/blur'
 import { Container } from '@/components/ui/Container'
 import { Seal } from '@/components/ui/Seal'
 import { StatusPill } from '@/components/ui/StatusPill'
@@ -94,7 +95,7 @@ export default function HomePage() {
           {/* A modern glass tower (owner, 2026-11-21: "a good posh office building"), with a small trust-profile tag over the photo. */}
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-line" style={{ boxShadow: 'var(--shadow-card)' }}>
-              <Image src="/images/hero-tower.webp" alt="A modern glass office tower rising against the sky" fill priority sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover" />
+              <Image src="/images/hero-tower.webp" alt="A modern glass office tower rising against the sky" fill priority sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover" {...blurProps("/images/hero-tower.webp")} />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b1730]/45 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-5 left-4 sm:-left-6 flex items-center gap-3 rounded-2xl border border-line bg-bg-elevated px-4 py-3" style={{ boxShadow: 'var(--shadow-card)' }}>
@@ -139,7 +140,7 @@ export default function HomePage() {
             {SERVICES.map(s => (
               <div key={s.href} className="flex flex-col overflow-hidden rounded-2xl bg-bg-elevated border border-line" style={{ boxShadow: 'var(--shadow-card)' }}>
                 <div className="relative aspect-[16/10] overflow-hidden">
-                  <Image src={s.image} alt={s.alt} fill sizes="(min-width: 1024px) 33vw, 100vw" className="object-cover" />
+                  <Image src={s.image} alt={s.alt} fill sizes="(min-width: 1024px) 33vw, 100vw" className="object-cover" {...blurProps(s.image)} />
                 </div>
                 <div className="flex flex-1 flex-col p-7">
                 <Seal size={26} />
@@ -258,7 +259,7 @@ export default function HomePage() {
         <Container className="relative overflow-hidden rounded-3xl bg-navy-fixed px-6 py-14 sm:px-14 sm:py-16 text-center text-white">
           {/* City at night under the navy band colour (2026-11-21). */}
           <div className="absolute inset-0" aria-hidden="true">
-            <Image src="/images/cta-city.webp" alt="" fill sizes="100vw" className="object-cover opacity-35 mix-blend-luminosity" />
+            <Image src="/images/cta-city.webp" alt="" fill sizes="100vw" className="object-cover opacity-35 mix-blend-luminosity" {...blurProps("/images/cta-city.webp")} />
             <div className="absolute inset-0 bg-navy-fixed/60" />
           </div>
           <div className="relative">
