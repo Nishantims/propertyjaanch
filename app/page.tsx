@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
 import { Seal } from '@/components/ui/Seal'
 import { StatusPill } from '@/components/ui/StatusPill'
@@ -30,6 +31,8 @@ const SERVICES = [
     tagline: 'Know before you buy.',
     text: 'Independent verification of ownership, title, encumbrances, loans, disputes, boundaries, and available government records — turned into one plain-language report.',
     cta: 'Verify a Property',
+    image: '/images/service-trust-check.webp',
+    alt: 'Property documents being signed',
   },
   {
     href: '/marketplace',
@@ -37,6 +40,8 @@ const SERVICES = [
     tagline: 'Buy and sell with proof, not promises.',
     text: 'Listings only get a Trust badge after their verification is complete — so what you’re browsing already has real information behind it, not just a seller’s word.',
     cta: 'Explore Verified Listings',
+    image: '/images/service-marketplace.webp',
+    alt: 'Apartment towers at dusk',
   },
   {
     href: '/secure-transaction',
@@ -44,6 +49,8 @@ const SERVICES = [
     tagline: 'Protect both sides of the deal.',
     text: 'A structured transaction workflow built around a regulated escrow arrangement, so money only moves when the agreed conditions are actually met.',
     cta: 'See How It Works',
+    image: '/images/service-secure-transaction.webp',
+    alt: 'House keys handed over at the door',
   },
 ]
 
@@ -63,7 +70,8 @@ export default function HomePage() {
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden border-b border-line">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_-10%,var(--navy-tint),transparent_55%)]" />
-        <Container className="pt-16 pb-16 sm:pt-24 sm:pb-24">
+        <Container className="pt-16 pb-16 sm:pt-24 sm:pb-24 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-16 items-center">
+          <div className="min-w-0">
           <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold mb-5">
             <Seal size={14} /> For property buyers &amp; sellers in India
           </p>
@@ -80,6 +88,22 @@ export default function HomePage() {
             <Link href="/marketplace" className="inline-flex items-center rounded-full border border-line-strong bg-bg-elevated px-7 py-3.5 text-[14px] font-semibold text-ink hover:border-gold-soft hover:text-gold transition-colors">
               Find Verified Property
             </Link>
+          </div>
+          </div>
+
+          {/* Residential towers, with a small trust-profile tag over the photo (2026-11-21). */}
+          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+            <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-line" style={{ boxShadow: 'var(--shadow-card)' }}>
+              <Image src="/images/hero-residences.webp" alt="Residential apartment towers in Mumbai" fill priority sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0b1730]/45 via-transparent to-transparent" />
+            </div>
+            <div className="absolute -bottom-5 left-4 sm:-left-6 flex items-center gap-3 rounded-2xl border border-line bg-bg-elevated px-4 py-3" style={{ boxShadow: 'var(--shadow-card)' }}>
+              <Seal size={22} />
+              <div>
+                <p className="text-[10.5px] font-semibold uppercase tracking-wide text-ink-faint">Property Trust Profile</p>
+                <p className="text-[13px] font-semibold text-ink">Ownership · Title · Encumbrance</p>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
@@ -113,7 +137,11 @@ export default function HomePage() {
           </h2>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
             {SERVICES.map(s => (
-              <div key={s.href} className="flex flex-col rounded-2xl bg-bg-elevated border border-line p-7" style={{ boxShadow: 'var(--shadow-card)' }}>
+              <div key={s.href} className="flex flex-col overflow-hidden rounded-2xl bg-bg-elevated border border-line" style={{ boxShadow: 'var(--shadow-card)' }}>
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image src={s.image} alt={s.alt} fill sizes="(min-width: 1024px) 33vw, 100vw" className="object-cover" />
+                </div>
+                <div className="flex flex-1 flex-col p-7">
                 <Seal size={26} />
                 <h3 className="font-display text-lg text-ink mt-4 mb-1">{s.title}</h3>
                 <p className="text-[13px] font-semibold text-gold mb-3">{s.tagline}</p>
@@ -121,6 +149,7 @@ export default function HomePage() {
                 <Link href={s.href} className="mt-6 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-navy hover:text-gold transition-colors">
                   {s.cta} <span aria-hidden="true">&rarr;</span>
                 </Link>
+                </div>
               </div>
             ))}
           </div>
@@ -226,7 +255,13 @@ export default function HomePage() {
 
       {/* ── Final CTA ────────────────────────────────────────────── */}
       <section className="py-16 sm:py-24">
-        <Container className="rounded-3xl bg-navy-fixed px-6 py-14 sm:px-14 sm:py-16 text-center text-white">
+        <Container className="relative overflow-hidden rounded-3xl bg-navy-fixed px-6 py-14 sm:px-14 sm:py-16 text-center text-white">
+          {/* City at night under the navy band colour (2026-11-21). */}
+          <div className="absolute inset-0" aria-hidden="true">
+            <Image src="/images/cta-city.webp" alt="" fill sizes="100vw" className="object-cover opacity-35 mix-blend-luminosity" />
+            <div className="absolute inset-0 bg-navy-fixed/60" />
+          </div>
+          <div className="relative">
           <h2 className="font-display text-2xl sm:text-[2.1rem] font-medium text-balance max-w-xl mx-auto">
             Buying or selling property? Start with what&apos;s actually true about it.
           </h2>
@@ -237,6 +272,7 @@ export default function HomePage() {
             <Link href="/contact" className="inline-flex items-center rounded-full border border-white/30 px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-white/10 transition-colors">
               Talk to Us
             </Link>
+          </div>
           </div>
         </Container>
       </section>

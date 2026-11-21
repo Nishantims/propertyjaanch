@@ -1,0 +1,27 @@
+{
+ "/images/hero-residences.webp": {
+  "photographer": "Zoshua Colah",
+  "source": "https://images.unsplash.com/photo-1750715831822-b9156ee618a5",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/service-trust-check.webp": {
+  "photographer": "Jakub Żerdzicki",
+  "source": "https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/service-marketplace.webp": {
+  "photographer": "Vivek V",
+  "source": "https://images.unsplash.com/photo-1758431145201-2846e60054b0",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/service-secure-transaction.webp": {
+  "photographer": "Jakub Żerdzicki",
+  "source": "https://images.unsplash.com/photo-1741156386380-0236c72eb6f9",
+  "license": "Unsplash License (free commercial use)"
+ },
+ "/images/cta-city.webp": {
+  "photographer": "Danish Puri",
+  "source": "https://images.unsplash.com/photo-1793541567237-d53e4e6c62f6",
+  "license": "Unsplash License (free commercial use)"
+ }
+}
